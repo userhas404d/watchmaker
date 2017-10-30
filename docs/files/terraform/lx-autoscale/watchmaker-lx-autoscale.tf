@@ -103,7 +103,7 @@ ToggleNewInstances = "A"
 }
 #on_failure = "DO_NOTHING" //DO_NOTHING , ROLLBACK, DELETE
 
-#requires that the template
+#Assumes that watchmaker-lx-autoscale.template is stored in same directory as watchmaker-lx-autoscale.tf
 template_body = "${file("${path.module}/watchmaker-lx-autoscale.template")}"
 
 }

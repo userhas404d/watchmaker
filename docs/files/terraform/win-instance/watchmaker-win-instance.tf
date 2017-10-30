@@ -1,4 +1,4 @@
-##Assumes that watchmaker-win-instance.template is stored in same directory as watchmaker-win-instance.tf
+#Assumes that watchmaker-win-instance.template is stored in same directory as watchmaker-win-instance.tf
 
 resource "aws_cloudformation_stack" "watchmaker-win-instance" {
 name = "tf-watchmaker-win-instance"
@@ -88,7 +88,7 @@ ToggleCfnInitUpdate = "A"
 }
 #on_failure = "DO_NOTHING" #DO_NOTHING , ROLLBACK, DELETE
 
-
+#Assumes that watchmaker-win-instance.template is stored in same directory as watchmaker-win-instance.tf
 template_body = "${file("${path.module}/watchmaker-win-instance.template")}"
 
 }
