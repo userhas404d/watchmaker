@@ -1,6 +1,6 @@
 #Assumes that watchmaker-lx-instance.template is stored in same directory as watchmaker-lx-instance.tf
 
-variable "ami_id"{
+variable "ami_id" {
   type = "string"
   description = "ID of the AMI to launch"
 }
